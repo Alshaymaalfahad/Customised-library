@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+:root {
+  --ink: #1A1820;
+  --ink-2: #2B2836;
+  --ink-soft: #6B6875;
+  --paper: #EEF4F8;
+  --paper-2: #DCEAF2;
+  --card: #FFFFFF;
+  --purple: #4EACE9;
+  --purple-dark: #1880C3;
+  --purple-light: #E7F2F9;
+  --blue: #2E86C4;
+  --red: #D64545;
+  --line: rgba(26, 24, 32, 0.12);
+}
+
+@theme inline {
+  --color-ink: var(--ink);
+  --color-ink-2: var(--ink-2);
+  --color-ink-soft: var(--ink-soft);
+  --color-paper: var(--paper);
+  --color-paper-2: var(--paper-2);
+  --color-card: var(--card);
+  --color-purple: var(--purple);
+  --color-purple-dark: var(--purple-dark);
+  --color-purple-light: var(--purple-light);
+  --color-blue: var(--blue);
+  --color-red: var(--red);
+  --color-line: var(--line);
+  --font-sans: var(--font-plex-arabic);
+  --font-serif: var(--font-markazi);
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+}
+
+::selection {
+  background: var(--purple);
+  color: #fff;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 4px;
+  border-radius: 3px;
+  background: rgba(26, 24, 32, 0.12);
+  outline: none;
+}
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--purple);
+  border: 3px solid var(--card);
+  box-shadow: 0 0 0 1px var(--purple);
+  cursor: pointer;
+}
